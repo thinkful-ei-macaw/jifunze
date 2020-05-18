@@ -34,7 +34,7 @@ describe(`User story: Login`, function() {
     cy.get('main section').within($nav => {
       cy.get('a[href="/login"]')
         .should('be.visible')
-        .and('have.text', 'Already have an account?')
+        .and('have.text', 'Log In')
         .click()
         .url()
         .should('eq', `${Cypress.config().baseUrl}/login`)
@@ -43,7 +43,7 @@ describe(`User story: Login`, function() {
 
   it(`allows navigation back to the registration page`, () => {
     cy.visit('/login')
-      .get('a[href="/register"]')
+      .get('a[href="/register"].header-registration')
       .should('be.visible')
       .and('have.text', 'Sign up')
   })

@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+}
+
+h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}

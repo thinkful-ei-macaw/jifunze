@@ -45,7 +45,7 @@ describe(`User story: Register an account`, function() {
         .and('have.attr', 'required', 'required')
 
       cy.get('button[type=submit]')
-        .should('have.text', 'Sign up')
+        .should('have.text', 'Create an Account')
     })
   })
 
