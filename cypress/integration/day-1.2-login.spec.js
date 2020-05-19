@@ -25,12 +25,6 @@ describe(`User story: Login`, function() {
   it(`has navigation to login page in nav and form`, () => {
     cy.visit('/')
 
-    cy.get('header nav').within($nav => {
-      cy.get('a[href="/login"]')
-        .should('be.visible')
-        .and('have.text', 'Login')
-    })
-
     cy.get('main section').within($nav => {
       cy.get('a[href="/login"]')
         .should('be.visible')
@@ -43,9 +37,9 @@ describe(`User story: Login`, function() {
 
   it(`allows navigation back to the registration page`, () => {
     cy.visit('/login')
-      .get('a[href="/register"].header-registration')
+      .get('a[href="/register"]')
       .should('be.visible')
-      .and('have.text', 'Sign up')
+      .and('have.text', 'Sign Up')
   })
 
   it('displays the login page', () => {
