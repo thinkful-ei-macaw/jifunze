@@ -1,52 +1,43 @@
 form {
-    display: flex;
-    flex-direction: column;
+  padding-top: 0;
 }
 
 form div {
-    display: flex;
-    flex-direction: column;
-    margin-left: 25px;
-    margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+form p {
+  text-align: center;
 }
 
 form label {
-    display: flex;
+  display: flex;
 }
 
 form footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px 25px 0px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1em;
 }
 
 form footer p {
-    margin: 0;
-    padding-top: 15px;
+  margin: 1em 0 0;
 }
 
 form footer a {
-    text-shadow: 1px 1px #ccc;
-    color: cornflowerblue;
-    text-decoration: none;
-    text-align: center;
+  color: var(--colorAccent);
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
 }
 
-input[type=text], input[type=password] {
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-button[type=submit] {
-    padding: 14px 20px;
-    margin: 8px 0;
-    background-color: cornflowerblue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+input[type="text"],
+input[type="password"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }

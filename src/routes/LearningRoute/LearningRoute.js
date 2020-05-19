@@ -1,13 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class LearningRoute extends Component {
   render() {
-    return (
-      <section>
-        implement and style me
-      </section>
-    );
+    return <section>implement and style me</section>;
   }
 }
 
-export default LearningRoute
+export default LearningRoute;

@@ -1,0 +1,51 @@
+.jumbotron {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background: #DDD;
+  padding: 2em;
+}
+
+.jumbotron h2,
+.jumbotron p {
+  margin: 0;
+  text-align: left;
+}
+
+.jumbotron .sub {
+  font-size: 1.2em;
+  margin: 0.2em 0;
+}
+
+.jumbotron .score {
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-transform: capitalize;
+  margin-bottom: 1.5em;
+}
+
+li h4,
+li p {
+  margin: 0;
+}
+
+li h4 {
+  color: var(--colorAccent);
+  font-size: 1.2em;
+}
+
+li .translation {
+  font-weight: bold;
+}
+
+li .scores span{
+  display: block;
+}

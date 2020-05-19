@@ -1,8 +1,10 @@
-h2, p {
-    text-align: center;
+h2 {
+  text-align: center;
 }
 
-p {
-    margin-left: 25px;
-    margin-right: 25px;
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+  padding: 2em;
+  margin: 0 auto;  
 }
