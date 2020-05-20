@@ -18,14 +18,22 @@ const LanguageApiService = {
       headers: {
         'Authorization': 'Bearer ' + TokenService.getAuthToken(),
       },
-    })
-    .then(res => {
-      if (!res.ok) {
-        return res.json().then((e) => Promise.reject(e));
-      }
+    }).then((res) =>
+      !res.ok ? res.json().then((err) => Promise.reject(err)) : res.json()
+    );
+  },
 
-      return res.json()
-    });
+  postGuess(guess) {
+    return fetch(`${config.API_ENDPOINT}/language/guess`, {
+      method: 'POST',
+      headers: {
+        'Authorization': 'Bearer ' + TokenService.getAuthToken(),
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ guess })
+    }).then((res) =>
+      !res.ok ? res.json().then((err) => Promise.reject(err)) : res.json()
+    );
   }
 };
 
