@@ -41,7 +41,7 @@ class RegistrationForm extends Component {
     return (
       <form className="wrapper" onSubmit={this.handleSubmit}>
         <div role="alert">{error && <p>{error}</p>}</div>
-        <div>
+        <div className="input-group col">
           <Label htmlFor="registration-name-input">
             Enter your name
             <Required />
@@ -53,14 +53,14 @@ class RegistrationForm extends Component {
             required
           />
         </div>
-        <div>
+        <div className="input-group col">
           <Label htmlFor="registration-username-input">
             Choose a username
             <Required />
           </Label>
           <Input id="registration-username-input" name="username" required />
         </div>
-        <div>
+        <div className="input-group col">
           <Label htmlFor="registration-password-input">
             Choose a password
             <Required />

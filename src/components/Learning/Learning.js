@@ -70,40 +70,31 @@ class Learning extends Component {
   render() {
     const { feedback } = this.state;
     return (
-      <section className="wrapper">
-        {/*present a input to type my answer/guess for the current words translations*/}
-        { !feedback
-        ? (
-          <>
-            <div className="total-score">
-              <p>Your total score is: {this.state.totalScore}</p>
-            </div>
+      <section className="learning">
+        {!feedback
+          ? (
+            <article className="wrapper content">
+              <h2>Translate the word:</h2>
+              <span className="original">{this.state.word}</span>
+              <form autoComplete="off" className="answer-form" onSubmit={this.handleSubmit}>
+                <Label htmlFor="learn-guess-input">What's the translation for this word?</Label>
+                <div className="input-group">
+                  <Input id="learn-guess-input" name="learn-guess-input" ref={this.guess} required />
+                  <Button type="submit">Submit your answer</Button>
+                </div>
+              </form>
 
-            <div className="word-container">
-              <h2>Translate the word:</h2><span>{this.state.word}</span>
-            </div>
-
-            <div className="count-container">
-              <p>You have answered this word correctly {this.state.wordCorrectCount} times.</p>
-              <p>You have answered this word incorrectly {this.state.wordIncorrectCount} times.</p>
-            </div>
-
-            <form className="answer-form" onSubmit={this.handleSubmit} >
-              <Label htmlFor="learn-guess-input">What's the translation for this word?</Label>
-              <Input id="learn-guess-input" name="learn-guess-input" ref={this.guess} required />
-
-              {/* Implement the handle submit button to handle the post request */}
-              <Button type="submit">Submit your answer</Button>
-            </form>
-          </>
-        )
-        : (
-          <>
+              <div className="score-info">
+                <p className="total-score">Your total score is: {this.state.totalScore}</p>
+                <p>
+                  You have answered this word correctly <span>{this.state.wordCorrectCount} times.</span></p>
+                <p>You have answered this word incorrectly <span>{this.state.wordIncorrectCount} times.</span></p>
+              </div>
+            </article>
+          )
+          : (
             <Feedback data={feedback} onClick={this.clearFeedback} />
-          </>
-        )}
-        
-
+          )}
       </section>
     )
   }

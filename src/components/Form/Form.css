@@ -2,17 +2,25 @@ form {
   padding-top: 0;
 }
 
-form div {
+form .input-group {
   display: flex;
   flex-direction: column;
 }
 
-form p {
-  text-align: center;
+@media screen and (min-width: 480px) {
+  form .input-group:not(.col) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  form .input-group:not(.col) input {
+    flex: 1;
+    margin-right: 1em;
+  }
 }
 
-form label {
-  display: flex;
+form p {
+  text-align: center;
 }
 
 form footer {
@@ -35,8 +43,8 @@ form footer a {
 
 input[type="text"],
 input[type="password"] {
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 1em 1.2em;
+  margin: 0.8em 0;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;

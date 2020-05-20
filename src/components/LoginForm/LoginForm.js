@@ -46,7 +46,7 @@ class LoginForm extends Component {
     return (
       <form className="LoginForm wrapper" onSubmit={this.handleSubmit}>
         <div role="alert">{error && <p>{error}</p>}</div>
-        <div>
+        <div className="input-group col">
           <Label htmlFor="login-username-input">Username</Label>
           <Input
             ref={this.firstInput}
@@ -55,7 +55,7 @@ class LoginForm extends Component {
             required
           />
         </div>
-        <div>
+        <div className="input-group col">
           <Label htmlFor="login-password-input">Password</Label>
           <Input
             id="login-password-input"
