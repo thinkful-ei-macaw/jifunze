@@ -1,5 +1,6 @@
 h2 {
   text-align: center;
+  margin: 0;
 }
 
 .wrapper {
@@ -7,4 +8,28 @@ h2 {
   max-width: 800px;
   padding: 2em;
   margin: 0 auto;  
+}
+
+.jumbotron {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background: #DDD;
+  padding: 2em;
+}
+
+.jumbotron h2,
+.jumbotron p {
+  margin: 0;
+  text-align: left;
+}
+
+.jumbotron .sub {
+  font-size: 1.2em;
+  margin: 0.2em 0;
+}
+
+.jumbotron .score {
+  font-weight: bold;
+  margin: 1em 0;
 }

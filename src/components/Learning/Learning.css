@@ -1,29 +1,43 @@
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 2em;
-    margin-left: 2em;
+.learning .original {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--colorAccent);
+  text-align: center;
+  display: block;
+  margin-bottom: 1em;
 }
 
-.total-score {
-    display: flex;
-    justify-content: flex-end;;
+.learning .count-container {
+  text-align: center;
 }
 
-.word-container {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: center;    
+.learning .count-container p {
+  margin: 0 0 1em;
 }
 
-.count-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.learning .answer-form {
+  display: flex;
+  flex-direction: column;
 }
 
-.answer-form {
-    display: flex;
-    flex-direction: column;
+.learning .content {
+  padding-top: 0;
+}
+
+.learning .score-info {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.learning .score-info p {
+  margin: 0 0 1em;
+}
+
+.learning .score-info p span {
+  white-space: nowrap;
+}
+
+.learning .total-score {
+  font-weight: bold;
+  font-size: 1.2em;
 }

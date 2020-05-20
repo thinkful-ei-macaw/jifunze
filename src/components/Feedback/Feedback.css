@@ -1,0 +1,11 @@
+.feedback {
+  text-align: center;
+}
+
+.feedback .icon {
+  margin-bottom: 2rem;
+}
+
+.feedback .icon-correct {
+  fill: var(--colorCorrect);
+}
