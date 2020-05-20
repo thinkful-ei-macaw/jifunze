@@ -40,6 +40,11 @@ export class LanguageProvider extends Component {
     this.setState({ error: null });
   };
 
+  setScore = (score) => {
+    console.log('You called?')
+    this.setState({ score });
+  }
+
   render() {
     const value = {
       language: this.state.language,
@@ -47,6 +52,7 @@ export class LanguageProvider extends Component {
       error: this.state.error,
       setError: this.setError,
       clearError: this.clearError,
+      setScore: this.setScore
     };
     return (
       <LanguageContext.Provider value={value}>
