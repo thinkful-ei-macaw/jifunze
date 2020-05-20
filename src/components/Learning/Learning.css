@@ -1,0 +1,29 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.total-score {
+    display: flex;
+    justify-content: flex-end;;
+}
+
+.word-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;    
+}
+
+.count-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.answer-form {
+    display: flex;
+    flex-direction: column;
+}
