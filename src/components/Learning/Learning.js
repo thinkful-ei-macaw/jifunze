@@ -55,7 +55,7 @@ class Learning extends Component {
           word: data.nextWord,
           totalScore: data.totalScore,
           wordCorrectCount: data.wordCorrectCount,
-          wordIncorrectCount: data.wordCorrectCount
+          wordIncorrectCount: data.wordIncorrectCount
         });
       });
   }
