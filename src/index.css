@@ -15,6 +15,6 @@ body {
 
 :root {
   --font-size: calc(10px + 1vmin);
-  --colorAccent: rgb(214, 60, 60);
-  --colorWord: rgb(255, 241, 241);
+  --colorAccent: #CA2B2B;
+  --colorWord: #FFF1F1;
 }
